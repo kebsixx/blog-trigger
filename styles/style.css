@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Parkinsans", sans-serif;
+}
+
+:root {
+  --white-color: #f3f4ed;
+  --text-color: #424642;
+  --secondary-color: #536162;
+  --tertiary-color: #c06014;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  padding: 1rem 20%;
+  background-color: var(--text-color);
+  color: var(--white-color);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 0.5rem;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav input {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+  background-color: var(--white-color);
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.nav-links a:hover {
+  color: var(--tertiary-color);
+}
+
+main {
+  overflow: auto;
+}
+
+.judul {
+  padding: 5% 20%;
+  background-color: var(--white-color);
+  color: var(--tertiary-color);
+  font-size: larger;
+}
+
+h1 {
+  max-width: 50%;
+}
+
+.judul span {
+  padding: 0 0.5rem;
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+}
+
+article {
+  padding: 3% 0 3% 20%;
+  float: left;
+  width: 55%;
+  color: var(--text-color);
+}
+
+#pengertian {
+  padding: 1.2rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  border-radius: 25px 25px 25px 0;
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+}
+
+#pengertian h2 {
+  margin-bottom: 1rem;
+}
+
+#pengertian span {
+  font-size: 1.5rem;
+}
+
+#perbedaan ul {
+  padding-left: 1.3rem;
+}
+
+.list-perbedaan {
+  margin: 1rem 0;
+}
+
+#alasan h2 span {
+  color: var(--tertiary-color);
+  text-decoration: underline;
+}
+
+#alasan ol {
+  margin: 1rem 0;
+  padding-left: 1.3rem;
+}
+
+#alasan ol li span {
+  font-weight: bold;
+}
+
+#contoh ol {
+  padding-left: 1.3rem;
+  margin: 1rem 0;
+}
+
+#contoh ol li {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+#contoh ol img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--secondary-color);
+  width: 100%;
+}
+
+aside {
+  float: right;
+  width: 40%;
+  padding: 2rem 20% 1rem 0;
+  color: var(--text-color);
+}
+
+aside h2 {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+aside img {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--secondary-color);
+}
+
+footer {
+  padding: 1rem 20%;
+  background-color: var(--text-color);
+  color: var(--white-color);
+}
+
+footer p {
+  text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+  header {
+    padding: 1rem 10%;
+  }
+  .judul {
+    padding: 5% 10%;
+  }
+  article {
+    padding: 3% 0 3% 10%;
+    width: 55%;
+  }
+  aside {
+    width: 40%;
+    padding: 2rem 12% 1rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1rem 5%;
+  }
+  .judul {
+    padding: 5% 5%;
+  }
+  .judul h1 {
+    max-width: 80%;
+  }
+  article {
+    padding: 3% 5%;
+    width: 100%;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 15rem;
+    background-color: var(--white-color);
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .nav-links.active {
+    right: 0;
+  }
+  .nav-links a {
+    display: block;
+    padding: 1rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .judul {
+    padding: 20% 5% 5% 5%;
+  }
+  .judul h1 {
+    font-size: 1.5rem;
+  }
+  .judul p {
+    font-size: 0.8rem;
+  }
+  #pengertian {
+    background: none;
+    color: var(--text-color);
+    padding: 5rem 0 0 0;
+  }
+  #perbedaan {
+    padding-top: 5rem;
+  }
+  #alasan {
+    padding-top: 5rem;
+  }
+  #contoh {
+    padding-top: 5rem;
+  }
+}

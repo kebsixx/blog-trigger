@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trigger dalam MySQL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <h1>Trigger</h1>
+      </a>
+      <nav>
+        <div class="nav-links">
+          <a href="#pengertian">Pengertian</a>
+          <a href="#perbedaan">Perbedaan</a>
+          <a href="#alasan">Alasan</a>
+          <a href="#contoh">Contoh</a>
+        </div>
+        <input id="toggle" type="checkbox" />
+        <label for="toggle" id="hamburger" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </nav>
+    </header>
+
+    <main>
+      <section class="judul">
+        <h1>Trigger dalam <span>MySQL</span> : Pengertian dan Fungsinya</h1>
+        <p>Pemicu, menggerakkan, picu, atau pelatuk.</p>
+      </section>
+
+      <article>
+        <section id="pengertian">
+          <h2>Apa itu Trigger ?</h2>
+          <q>
+            Trigger dalam <span>MySQL</span> adalah sebuah fitur yang
+            memungkinkan kita menjalankan serangkaian perintah SQL secara
+            otomatis ketika terjadi suatu peristiwa tertentu pada sebuah tabel.
+            Peristiwa yang dimaksud bisa berupa tindakan menambahkan,
+            memperbarui, atau menghapus data.
+          </q>
+        </section>
+
+        <section id="perbedaan">
+          <h2>Perbedaan Trigger SEBELUM dan SESUDAH</h2>
+
+          <div class="list-perbedaan">
+            <h4>Trigger SEBELUM :</h4>
+            <ul>
+              <li>Dijalankan sebelum perubahan data dilakukan.</li>
+              <li>Berguna untuk:</li>
+              <ul>
+                <li>Memeriksa apakah data yang akan disimpan sudah benar.</li>
+                <li>Menghitung nilai secara otomatis sebelum data disimpan.</li>
+                <li>
+                  Mencegah perubahan data yang tidak sesuai dengan aturan.
+                </li>
+              </ul>
+            </ul>
+          </div>
+
+          <div class="list-perbedaan">
+            <h4>Trigger SESUDAH :</h4>
+            <ul>
+              <li>Dijalankan setelah perubahan data dilakukan.</li>
+              <li>Berguna untuk:</li>
+              <ul>
+                <li>Mencatat perubahan data untuk keperluan audit.</li>
+                <li>Memperbarui data di tabel lain yang terkait.</li>
+                <li>Mengirim pemberitahuan setelah data berubah.</li>
+              </ul>
+            </ul>
+          </div>
+        </section>
+
+        <section id="alasan">
+          <h2>Mengapa Menggunakan <span>Trigger?</span></h2>
+          <ol type="a">
+            <li>
+              <span>Menjaga Keakuratan Data :</span> Memastikan data yang
+              tersimpan selalu benar dan konsisten.
+            </li>
+            <li>
+              <span>Otomatisasi Tugas :</span> Melakukan tugas berulang secara
+              otomatis tanpa perlu perintah manual.
+            </li>
+            <li>
+              <span>Menerapkan Aturan Bisnis :</span> Mengatur agar data selalu
+              mengikuti aturan yang telah ditetapkan.
+            </li>
+            <li>
+              <span>Melacak Perubahan Data :</span> Mencatat setiap perubahan
+              data untuk keperluan analisis atau pelaporan.
+            </li>
+          </ol>
+        </section>
+
+        <section id="contoh">
+          <h2>Contoh Penggunaan Trigger</h2>
+          <ol>
+            <div>
+              <li>Validasi Data</li>
+              <img src="images/contoh1.png" alt="Contoh Code Validasi Data" />
+              <p>
+                Trigger di atas akan mencegah penambahan data pelanggan dengan
+                usia kurang dari 18 tahun.
+              </p>
+            </div>
+
+            <div>
+              <li>Otomatisasi Tugas</li>
+              <img src="images/contoh2.png" alt="Contoh Code Otomasi Tugas" />
+              <p>
+                Trigger ini akan mencatat setiap perubahan harga produk ke dalam
+                tabel log.
+              </p>
+            </div>
+          </ol>
+        </section>
+      </article>
+
+      <aside>
+        <h2>Tentang Penulis</h2>
+        <figure>
+          <img src="images/profil.JPG" alt="Foto Penulis" />
+        </figure>
+        <figcaption>
+          Rizieq, seorang developer yang gemar berbagi tips dan trik seputar
+          dunia pemrograman.
+        </figcaption>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2024 by <span>Rizieq</span></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
