@@ -207,6 +207,9 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+  .logo {
+    font-size: small;
+  }
   .nav-links {
     position: absolute;
     top: 100%;
@@ -230,13 +233,17 @@ footer p {
     display: block;
   }
   .judul {
-    padding: 20% 5% 5% 5%;
+    padding: 2rem 1rem;
   }
   .judul h1 {
-    font-size: 1.5rem;
+    max-width: 100%;
+    font-size: 2rem;
   }
   .judul p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+  .flex {
+    padding: 0;
   }
   #pengertian {
     background: none;
