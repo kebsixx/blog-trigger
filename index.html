@@ -38,106 +38,110 @@
         <p>Pemicu, menggerakkan, picu, atau pelatuk.</p>
       </section>
 
-      <article>
-        <section id="pengertian">
-          <h2>Apa itu Trigger ?</h2>
-          <q>
-            Trigger dalam <span>MySQL</span> adalah sebuah fitur yang
-            memungkinkan kita menjalankan serangkaian perintah SQL secara
-            otomatis ketika terjadi suatu peristiwa tertentu pada sebuah tabel.
-            Peristiwa yang dimaksud bisa berupa tindakan menambahkan,
-            memperbarui, atau menghapus data.
-          </q>
-        </section>
+      <div class="flex">
+        <article>
+          <section id="pengertian">
+            <h2>Apa itu Trigger ?</h2>
+            <q>
+              Trigger dalam <span>MySQL</span> adalah sebuah fitur yang
+              memungkinkan kita menjalankan serangkaian perintah SQL secara
+              otomatis ketika terjadi suatu peristiwa tertentu pada sebuah
+              tabel. Peristiwa yang dimaksud bisa berupa tindakan menambahkan,
+              memperbarui, atau menghapus data.
+            </q>
+          </section>
 
-        <section id="perbedaan">
-          <h2>Perbedaan Trigger SEBELUM dan SESUDAH</h2>
+          <section id="perbedaan">
+            <h2>Perbedaan Trigger SEBELUM dan SESUDAH</h2>
 
-          <div class="list-perbedaan">
-            <h4>Trigger SEBELUM :</h4>
-            <ul>
-              <li>Dijalankan sebelum perubahan data dilakukan.</li>
-              <li>Berguna untuk:</li>
+            <div class="list-perbedaan">
+              <h4>Trigger SEBELUM :</h4>
               <ul>
-                <li>Memeriksa apakah data yang akan disimpan sudah benar.</li>
-                <li>Menghitung nilai secara otomatis sebelum data disimpan.</li>
-                <li>
-                  Mencegah perubahan data yang tidak sesuai dengan aturan.
-                </li>
+                <li>Dijalankan sebelum perubahan data dilakukan.</li>
+                <li>Berguna untuk:</li>
+                <ul>
+                  <li>Memeriksa apakah data yang akan disimpan sudah benar.</li>
+                  <li>
+                    Menghitung nilai secara otomatis sebelum data disimpan.
+                  </li>
+                  <li>
+                    Mencegah perubahan data yang tidak sesuai dengan aturan.
+                  </li>
+                </ul>
               </ul>
-            </ul>
-          </div>
-
-          <div class="list-perbedaan">
-            <h4>Trigger SESUDAH :</h4>
-            <ul>
-              <li>Dijalankan setelah perubahan data dilakukan.</li>
-              <li>Berguna untuk:</li>
-              <ul>
-                <li>Mencatat perubahan data untuk keperluan audit.</li>
-                <li>Memperbarui data di tabel lain yang terkait.</li>
-                <li>Mengirim pemberitahuan setelah data berubah.</li>
-              </ul>
-            </ul>
-          </div>
-        </section>
-
-        <section id="alasan">
-          <h2>Mengapa Menggunakan <span>Trigger?</span></h2>
-          <ol type="a">
-            <li>
-              <span>Menjaga Keakuratan Data :</span> Memastikan data yang
-              tersimpan selalu benar dan konsisten.
-            </li>
-            <li>
-              <span>Otomatisasi Tugas :</span> Melakukan tugas berulang secara
-              otomatis tanpa perlu perintah manual.
-            </li>
-            <li>
-              <span>Menerapkan Aturan Bisnis :</span> Mengatur agar data selalu
-              mengikuti aturan yang telah ditetapkan.
-            </li>
-            <li>
-              <span>Melacak Perubahan Data :</span> Mencatat setiap perubahan
-              data untuk keperluan analisis atau pelaporan.
-            </li>
-          </ol>
-        </section>
-
-        <section id="contoh">
-          <h2>Contoh Penggunaan Trigger</h2>
-          <ol>
-            <div>
-              <li>Validasi Data</li>
-              <img src="images/contoh1.png" alt="Contoh Code Validasi Data" />
-              <p>
-                Trigger di atas akan mencegah penambahan data pelanggan dengan
-                usia kurang dari 18 tahun.
-              </p>
             </div>
 
-            <div>
-              <li>Otomatisasi Tugas</li>
-              <img src="images/contoh2.png" alt="Contoh Code Otomasi Tugas" />
-              <p>
-                Trigger ini akan mencatat setiap perubahan harga produk ke dalam
-                tabel log.
-              </p>
+            <div class="list-perbedaan">
+              <h4>Trigger SESUDAH :</h4>
+              <ul>
+                <li>Dijalankan setelah perubahan data dilakukan.</li>
+                <li>Berguna untuk:</li>
+                <ul>
+                  <li>Mencatat perubahan data untuk keperluan audit.</li>
+                  <li>Memperbarui data di tabel lain yang terkait.</li>
+                  <li>Mengirim pemberitahuan setelah data berubah.</li>
+                </ul>
+              </ul>
             </div>
-          </ol>
-        </section>
-      </article>
+          </section>
 
-      <aside>
-        <h2>Tentang Penulis</h2>
-        <figure>
-          <img src="images/profil.JPG" alt="Foto Penulis" />
-        </figure>
-        <figcaption>
-          Rizieq, seorang developer yang gemar berbagi tips dan trik seputar
-          dunia pemrograman.
-        </figcaption>
-      </aside>
+          <section id="alasan">
+            <h2>Mengapa Menggunakan <span>Trigger?</span></h2>
+            <ol type="a">
+              <li>
+                <span>Menjaga Keakuratan Data :</span> Memastikan data yang
+                tersimpan selalu benar dan konsisten.
+              </li>
+              <li>
+                <span>Otomatisasi Tugas :</span> Melakukan tugas berulang secara
+                otomatis tanpa perlu perintah manual.
+              </li>
+              <li>
+                <span>Menerapkan Aturan Bisnis :</span> Mengatur agar data
+                selalu mengikuti aturan yang telah ditetapkan.
+              </li>
+              <li>
+                <span>Melacak Perubahan Data :</span> Mencatat setiap perubahan
+                data untuk keperluan analisis atau pelaporan.
+              </li>
+            </ol>
+          </section>
+
+          <section id="contoh">
+            <h2>Contoh Penggunaan Trigger</h2>
+            <ol>
+              <div>
+                <li>Validasi Data</li>
+                <img src="images/contoh1.png" alt="Contoh Code Validasi Data" />
+                <p>
+                  Trigger di atas akan mencegah penambahan data pelanggan dengan
+                  usia kurang dari 18 tahun.
+                </p>
+              </div>
+
+              <div>
+                <li>Otomatisasi Tugas</li>
+                <img src="images/contoh2.png" alt="Contoh Code Otomasi Tugas" />
+                <p>
+                  Trigger ini akan mencatat setiap perubahan harga produk ke
+                  dalam tabel log.
+                </p>
+              </div>
+            </ol>
+          </section>
+        </article>
+
+        <aside>
+          <h2>Tentang Penulis</h2>
+          <figure>
+            <img src="images/profil.JPG" alt="Foto Penulis" />
+          </figure>
+          <figcaption>
+            Rizieq, seorang developer yang gemar berbagi tips dan trik seputar
+            dunia pemrograman.
+          </figcaption>
+        </aside>
+      </div>
     </main>
 
     <footer>

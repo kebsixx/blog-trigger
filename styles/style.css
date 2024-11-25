@@ -12,20 +12,24 @@
   --tertiary-color: #c06014;
 }
 
+.flex {
+  display: flex;
+  padding: 4rem 20%;
+  gap: 2rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 header {
   display: flex;
-  position: fixed;
+  position: sticky;
   justify-content: space-between;
   padding: 1rem 20%;
   background-color: var(--text-color);
   color: var(--white-color);
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 999;
 }
 
@@ -63,10 +67,6 @@ nav input {
   color: var(--tertiary-color);
 }
 
-main {
-  overflow: auto;
-}
-
 .judul {
   padding: 5% 20%;
   background-color: var(--white-color);
@@ -85,9 +85,6 @@ h1 {
 }
 
 article {
-  padding: 3% 0 3% 20%;
-  float: left;
-  width: 55%;
   color: var(--text-color);
 }
 
@@ -147,14 +144,12 @@ article {
 }
 
 aside {
-  float: right;
-  width: 40%;
-  padding: 2rem 20% 1rem 0;
+  width: 80%;
   color: var(--text-color);
 }
 
 aside h2 {
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--secondary-color);
 }
 
