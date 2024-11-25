@@ -170,20 +170,15 @@ footer p {
   text-align: center;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   header {
     padding: 1rem 10%;
   }
   .judul {
     padding: 5% 10%;
   }
-  article {
-    padding: 3% 0 3% 10%;
-    width: 55%;
-  }
-  aside {
-    width: 40%;
-    padding: 2rem 12% 1rem 0;
+  .flex {
+    padding: 5% 10%;
   }
 }
 
@@ -191,14 +186,10 @@ footer p {
   header {
     padding: 1rem 5%;
   }
-  .judul {
-    padding: 5% 5%;
-  }
   .judul h1 {
     max-width: 80%;
   }
   article {
-    padding: 3% 5%;
     width: 100%;
   }
   aside {
@@ -242,13 +233,10 @@ footer p {
   .judul p {
     font-size: 1rem;
   }
-  .flex {
-    padding: 0;
-  }
   #pengertian {
     background: none;
     color: var(--text-color);
-    padding: 5rem 0 0 0;
+    padding: 5rem 0;
   }
   #perbedaan {
     padding-top: 5rem;
