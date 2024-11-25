@@ -71,10 +71,10 @@ nav input {
   padding: 5% 20%;
   background-color: var(--white-color);
   color: var(--tertiary-color);
-  font-size: larger;
 }
 
-h1 {
+.judul h1 {
+  font-size: 2rem;
   max-width: 50%;
 }
 
